@@ -1,0 +1,7 @@
+.workbuddy/
+*.py
+*.xlsx
+products.html
+google-sites-style.html
+split_excel_*.py
+analyze_excel*.py
