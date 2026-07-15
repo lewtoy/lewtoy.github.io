@@ -477,9 +477,9 @@ img { max-width: 100%; display: block; }
 }
 .social-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  max-width: 1100px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .social-card {
@@ -505,27 +505,28 @@ img { max-width: 100%; display: block; }
 .social-card.wx { background: linear-gradient(135deg, #07C160, #05944a); }
 .social-card.whatsapp { background: linear-gradient(135deg, #25D366, #128C7E); }
 .social-card.email { background: linear-gradient(135deg, #EA4335, #c5221f); }
+.social-card.tt { background: linear-gradient(135deg, #000000, #1a1a2e); }
 .social-card .social-icon {
-  width: 44px; height: 44px;
+  width: 50px; height: 50px;
   border-radius: 50%;
   background: rgba(255,255,255,0.2);
   display: flex; align-items: center; justify-content: center;
-  font-size: 22px;
+  font-size: 26px;
 }
 .social-card .social-name {
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
 .social-card .social-handle {
-  font-size: 15px;
+  font-size: 17px;
   opacity: 0.85;
   text-align: center;
   word-break: break-all;
 }
 .social-card .social-arrow {
   margin-top: 2px;
-  font-size: 14px;
+  font-size: 15px;
   opacity: 0.8;
   background: rgba(255,255,255,0.2);
   padding: 5px 14px;
@@ -656,9 +657,10 @@ img { max-width: 100%; display: block; }
   .footer-grid { grid-template-columns: 1fr; gap: 24px; }
   .contact-grid { grid-template-columns: 1fr; }
   .social-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  .social-card { padding: 16px 12px 14px; }
-  .social-card .social-icon { width: 38px; height: 38px; font-size: 20px; }
-  .social-card .social-name { font-size: 18px; }
+  .social-card { padding: 18px 14px 16px; }
+  .social-card .social-icon { width: 44px; height: 44px; font-size: 24px; }
+  .social-card .social-name { font-size: 22px; }
+  .social-card .social-handle { font-size: 15px; }
 
   .product-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
   .cat-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
