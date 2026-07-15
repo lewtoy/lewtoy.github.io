@@ -463,8 +463,6 @@ img { max-width: 100%; display: block; }
 .contact-item .ci-text h4 { font-size: 15px; margin-bottom: 4px; }
 .contact-item .ci-text p { color: var(--text-light); font-size: 14px; }
 
-.contact-form-wrap {
-
 /* ========================================
    SOCIAL MEDIA SECTION
    ======================================== */
@@ -496,7 +494,6 @@ img { max-width: 100%; display: block; }
   cursor: pointer;
 }
 .social-card:hover {
-  transform: translateY(-6px);
   box-shadow: 0 12px 32px rgba(0,0,0,0.2);
 }
 .social-card.fb { background: linear-gradient(135deg, #1877F2, #0d5dc2); }
