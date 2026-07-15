@@ -507,29 +507,29 @@ img { max-width: 100%; display: block; }
 .social-card.email { background: linear-gradient(135deg, #EA4335, #c5221f); }
 .social-card.tt { background: linear-gradient(135deg, #000000, #1a1a2e); }
 .social-card .social-icon {
-  width: 50px; height: 50px;
+  width: 58px; height: 58px;
   border-radius: 50%;
   background: rgba(255,255,255,0.2);
   display: flex; align-items: center; justify-content: center;
-  font-size: 26px;
+  font-size: 30px;
 }
 .social-card .social-name {
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
 .social-card .social-handle {
-  font-size: 17px;
+  font-size: 19px;
   opacity: 0.85;
   text-align: center;
   word-break: break-all;
 }
 .social-card .social-arrow {
   margin-top: 2px;
-  font-size: 15px;
+  font-size: 16px;
   opacity: 0.8;
   background: rgba(255,255,255,0.2);
-  padding: 5px 14px;
+  padding: 6px 16px;
   border-radius: 20px;
 }
 
@@ -658,9 +658,9 @@ img { max-width: 100%; display: block; }
   .contact-grid { grid-template-columns: 1fr; }
   .social-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .social-card { padding: 18px 14px 16px; }
-  .social-card .social-icon { width: 44px; height: 44px; font-size: 24px; }
-  .social-card .social-name { font-size: 22px; }
-  .social-card .social-handle { font-size: 15px; }
+  .social-card .social-icon { width: 50px; height: 50px; font-size: 26px; }
+  .social-card .social-name { font-size: 26px; }
+  .social-card .social-handle { font-size: 17px; }
 
   .product-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
   .cat-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
