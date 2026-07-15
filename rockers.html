@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spring Rockers — XINFENG LEWA TOYS</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .page-hero { background: linear-gradient(135deg, #1a3c5e 0%, #0d2137 100%); color: #fff; padding: 60px 0; text-align: center; }
+  .page-hero h1 { font-size: 36px; font-weight: 800; margin-bottom: 10px; }
+  .page-hero p { font-size: 16px; opacity: 0.85; }
+  .page-hero .count { display: inline-block; background: #e67e22; padding: 6px 18px; border-radius: 20px; font-size: 14px; font-weight: 600; margin-top: 12px; }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">XL</div>
+      <span>XINFENG LEWA TOYS</span>
+    </a>
+    <div class="hamburger" onclick="this.nextElementSibling.classList.toggle('mobile-open')">
+      <span></span><span></span><span></span>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="slides.html">Slides</a>
+      <a href="swings.html">Swings</a>
+      <a href="seesaws.html">Seesaws</a>
+      <a href="rockers.html" class="active">Rockers</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>🦖 Spring Rockers</h1>
+    <p>Fun animal and vehicle shaped spring rockers — 35+ designs for every playground theme</p>
+    <span class="count" id="totalCount">35 Models</span>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="product-grid" id="productGrid"></div>
+  </div>
+</section>
+
+<!-- CONNECT WITH US -->
+<section class="social-section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Connect With Us</h2>
+      <p>Reach out directly — we reply fast. Follow us for latest products and factory updates</p>
+    </div>
+    <div class="social-grid">
+      <a href="https://wa.me/8615558866771" target="_blank" class="social-card whatsapp">
+        <div class="social-icon">💬</div>
+        <div class="social-name">WhatsApp</div>
+        <div class="social-handle">+86 15558866771</div>
+        <span class="social-arrow">Chat Now →</span>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61589571517181" target="_blank" class="social-card fb">
+        <div class="social-icon">📘</div>
+        <div class="social-name">Facebook</div>
+        <div class="social-handle">XINFENG LEWA TOYS</div>
+        <span class="social-arrow">Visit Page →</span>
+      </a>
+      <a href="https://www.instagram.com/xuwen943/" target="_blank" class="social-card ig">
+        <div class="social-icon">📷</div>
+        <div class="social-name">Instagram</div>
+        <div class="social-handle">@xuwen943</div>
+        <span class="social-arrow">Follow Us →</span>
+      </a>
+      <a href="https://www.linkedin.com/in/win-he-7419ab20b/" target="_blank" class="social-card li">
+        <div class="social-icon">💼</div>
+        <div class="social-name">LinkedIn</div>
+        <div class="social-handle">Win He</div>
+        <span class="social-arrow">Connect →</span>
+      </a>
+      <div class="social-card wx" onclick="navigator.clipboard.writeText('15558866771');alert('WeChat ID copied: 15558866771')" style="cursor:pointer;">
+        <div class="social-icon">💚</div>
+        <div class="social-name">WeChat</div>
+        <div class="social-handle">15558866771</div>
+        <span class="social-arrow">Tap to Copy ID →</span>
+      </div>
+      <a href="mailto:284154683@qq.com" class="social-card email">
+        <div class="social-icon">📧</div>
+        <div class="social-name">Email</div>
+        <div class="social-handle">284154683@qq.com</div>
+        <span class="social-arrow">Send Email →</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>XINFENG LEWA TOYS CO., LTD</h4>
+        <p>Professional manufacturer of children's outdoor playground equipment. Factory-direct quality, shipped worldwide.</p>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <a href="slides.html">Large Slides</a>
+        <a href="swings.html">Swings</a>
+        <a href="seesaws.html">Seesaws</a>
+        <a href="rockers.html">Spring Rockers</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="https://wa.me/8615558866771">WhatsApp: +86 15558866771</a>
+        <a href="mailto:284154683@qq.com">284154683@qq.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 XINFENG LEWA TOYS CO., LTD. All rights reserved.</div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script>
+var files = [
+  {name:"8443E358-66CF-45a5-9629-AFC647B32C2F.png", label:"Animal Rocker 1"},
+  {name:"E2F33975-D6C1-4b14-9F98-73B1F461827E.png", label:"Animal Rocker 2"},
+  {name:"\u5343\u91cc\u9a6c1.jpg", label:"Horse Rocker"},
+  {name:"\u5510\u8001\u9e2d1.jpg", label:"Donald Duck Rocker"},
+  {name:"\u559c\u6d0b\u6d0b1.jpg", label:"Pleasant Goat Rocker"},
+  {name:"\u5927\u8c611.jpg", label:"Elephant Rocker"},
+  {name:"\u5c0f\u9a6c1.jpg", label:"Pony Rocker"},
+  {name:"\u6050\u9f991.jpg", label:"Dinosaur Rocker"},
+  {name:"\u6258\u9a6c\u65af1.jpg", label:"Thomas Train Rocker"},
+  {name:"\u6377\u666e\u8f661.jpg", label:"Jeep Rocker"},
+  {name:"\u63a8\u571f\u673a1.jpg", label:"Bulldozer Rocker"},
+  {name:"\u672a\u6807\u9898-1.jpg", label:"Rocker"},
+  {name:"\u677e\u9f201.jpg", label:"Squirrel Rocker"},
+  {name:"\u6885\u82b11.jpg", label:"Deer Rocker"},
+  {name:"\u6bdb\u6bdb\u866b1.jpg", label:"Caterpillar Rocker"},
+  {name:"\u6cb3\u9a6c1.jpg", label:"Hippo Rocker"},
+  {name:"\u6d77\u72ee1.jpg", label:"Sea Lion Rocker"},
+  {name:"\u6d77\u8c5a1.jpg", label:"Dolphin Rocker"},
+  {name:"\u6d77\u9a6c1.jpg", label:"Seahorse Rocker"},
+  {name:"\u7070\u592a\u72fc1.jpg", label:"Wolf Rocker"},
+  {name:"\u725b1.jpg", label:"Cow Rocker"},
+  {name:"\u72d71.jpg", label:"Dog Rocker"},
+  {name:"\u732a\u732a\u4fa01.jpg", label:"GG Bond Rocker"},
+  {name:"\u767d\u9e3d1.jpg", label:"Dove Rocker"},
+  {name:"\u7c73\u8001\u9f201.jpg", label:"Mickey Mouse Rocker"},
+  {name:"\u8001\u864e1.jpg", label:"Tiger Rocker"},
+  {name:"\u871c\u87021.jpg", label:"Bee Rocker"},
+  {name:"\u8df3\u8df3\u9c7c1.jpg", label:"Fish Rocker"},
+  {name:"\u9752\u86d91.jpg", label:"Frog Rocker"},
+  {name:"\u98de\u673a1.jpg", label:"Airplane Rocker"},
+  {name:"\u9c7c1.0.jpg", label:"Fish Rocker 2"},
+  {name:"\u9c7c2.0.jpg", label:"Fish Rocker 3"},
+  {name:"\u9cb8\u9c7c1.jpg", label:"Whale Rocker"},
+  {name:"\u9e7f1..jpg", label:"Deer Rocker 2"},
+  {name:"\u9e7f2.jpg", label:"Deer Rocker 3"}
+];
+
+document.getElementById('totalCount').textContent = files.length + ' Models';
+
+var grid = document.getElementById('productGrid');
+var html = '';
+for (var i = 0; i < files.length; i++) {
+  var ext = files[i].name.endsWith('.png') ? '.png' : '.jpg';
+  html += '<div class="product-card" onclick="openLightbox(\'images/rockers/' + files[i].name + '\')">';
+  html += '<div class="img-wrap"><img src="images/rockers/' + files[i].name + '" alt="' + files[i].label + '" loading="lazy"></div>';
+  html += '<div class="info"><span class="model">Rocker</span><h3>' + files[i].label + '</h3></div>';
+  html += '</div>';
+}
+grid.innerHTML = html;
+
+function openLightbox(src) {
+  document.getElementById('lightboxImg').src = src;
+  document.getElementById('lightbox').classList.add('active');
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+}
+</script>
+</body>
+</html>
