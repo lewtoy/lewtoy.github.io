@@ -354,5 +354,36 @@ function closeLightbox() {
   document.getElementById('lightbox').classList.remove('active');
 }
 </script>
+
+<script>
+/* Click-to-copy for social handles */
+document.querySelectorAll('.social-handle').forEach(el => {
+  el.style.cursor = 'copy';
+  el.title = 'Click to copy';
+  el.addEventListener('click', e => {
+    e.stopPropagation();
+    e.preventDefault();
+    const text = el.textContent.trim();
+    navigator.clipboard.writeText(text).then(() => {
+      const orig = el.textContent;
+      el.textContent = '✓ Copied!';
+      setTimeout(() => { el.textContent = orig; }, 1500);
+    }).catch(() => {
+      /* fallback for older browsers */
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      const orig = el.textContent;
+      el.textContent = '✓ Copied!';
+      setTimeout(() => { el.textContent = orig; }, 1500);
+    });
+  });
+});
+</script>
+
 </body>
 </html>
