@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swings — XINFENG LEWA TOYS</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .page-hero { background: linear-gradient(135deg, #1a3c5e 0%, #0d2137 100%); color: #fff; padding: 60px 0; text-align: center; }
+  .page-hero h1 { font-size: 36px; font-weight: 800; margin-bottom: 10px; }
+  .page-hero p { font-size: 16px; opacity: 0.85; }
+  .page-hero .count { display: inline-block; background: #e67e22; padding: 6px 18px; border-radius: 20px; font-size: 14px; font-weight: 600; margin-top: 12px; }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">XL</div>
+      <span>XINFENG LEWA TOYS</span>
+    </a>
+    <div class="hamburger" onclick="this.nextElementSibling.classList.toggle('mobile-open')">
+      <span></span><span></span><span></span>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="slides.html">Slides</a>
+      <a href="swings.html" class="active">Swings</a>
+      <a href="seesaws.html">Seesaws</a>
+      <a href="rockers.html">Rockers</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>🎠 Swings</h1>
+    <p>Single, double, and multi-seat outdoor swing sets — durable steel frames, comfortable seats</p>
+    <span class="count" id="totalCount">73 Models</span>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Standard Swings</h2>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--white);">
+  <div class="container">
+    <div class="section-title">
+      <h2>Swing Models <span style="font-weight:400;color:var(--text-light);font-size:18px;">— with Specifications</span></h2>
+    </div>
+    <div class="product-grid" id="enGrid"></div>
+  </div>
+</section>
+
+<!-- CONNECT WITH US -->
+<section class="social-section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Connect With Us</h2>
+      <p>Reach out directly — we reply fast. Follow us for latest products and factory updates</p>
+    </div>
+    <div class="social-grid">
+      <a href="https://wa.me/8615558866771" target="_blank" class="social-card whatsapp">
+        <div class="social-icon">💬</div>
+        <div class="social-name">WhatsApp</div>
+        <div class="social-handle">+86 15558866771</div>
+        <span class="social-arrow">Chat Now →</span>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61589571517181" target="_blank" class="social-card fb">
+        <div class="social-icon">📘</div>
+        <div class="social-name">Facebook</div>
+        <div class="social-handle">XINFENG LEWA TOYS</div>
+        <span class="social-arrow">Visit Page →</span>
+      </a>
+      <a href="https://www.instagram.com/xuwen943/" target="_blank" class="social-card ig">
+        <div class="social-icon">📷</div>
+        <div class="social-name">Instagram</div>
+        <div class="social-handle">@xuwen943</div>
+        <span class="social-arrow">Follow Us →</span>
+      </a>
+      <a href="https://www.linkedin.com/in/win-he-7419ab20b/" target="_blank" class="social-card li">
+        <div class="social-icon">💼</div>
+        <div class="social-name">LinkedIn</div>
+        <div class="social-handle">Win He</div>
+        <span class="social-arrow">Connect →</span>
+      </a>
+      <div class="social-card wx" onclick="navigator.clipboard.writeText('15558866771');alert('WeChat ID copied: 15558866771')" style="cursor:pointer;">
+        <div class="social-icon">💚</div>
+        <div class="social-name">WeChat</div>
+        <div class="social-handle">15558866771</div>
+        <span class="social-arrow">Tap to Copy ID →</span>
+      </div>
+      <a href="mailto:284154683@qq.com" class="social-card email">
+        <div class="social-icon">📧</div>
+        <div class="social-name">Email</div>
+        <div class="social-handle">284154683@qq.com</div>
+        <span class="social-arrow">Send Email →</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>XINFENG LEWA TOYS CO., LTD</h4>
+        <p>Professional manufacturer of children's outdoor playground equipment. Factory-direct quality, shipped worldwide.</p>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <a href="slides.html">Large Slides</a>
+        <a href="swings.html">Swings</a>
+        <a href="seesaws.html">Seesaws</a>
+        <a href="rockers.html">Spring Rockers</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="https://wa.me/8615558866771">WhatsApp: +86 15558866771</a>
+        <a href="mailto:284154683@qq.com">284154683@qq.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 XINFENG LEWA TOYS CO., LTD. All rights reserved.</div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script>
+var files = [];
+for (var i = 1; i <= 46; i++) { files.push(i + '.jpg'); }
+
+var enFiles = ['en_英0..jpg'];
+for (var i = 1; i <= 26; i++) { enFiles.push('en_英' + i + '.jpg'); }
+
+document.getElementById('totalCount').textContent = (files.length + enFiles.length) + ' Models';
+
+// Standard swings
+var grid = document.getElementById('productGrid');
+var html = '';
+for (var i = 0; i < files.length; i++) {
+  var name = files[i].replace('.jpg','');
+  html += '<div class="product-card" onclick="openLightbox(\'images/swings/' + files[i] + '\')">';
+  html += '<div class="img-wrap"><img src="images/swings/' + files[i] + '" alt="Swing ' + name + '" loading="lazy"></div>';
+  html += '<div class="info"><span class="model">Model S' + name + '</span><h3>Outdoor Swing</h3></div>';
+  html += '</div>';
+}
+grid.innerHTML = html;
+
+// English version swings with specs
+var enGrid = document.getElementById('enGrid');
+var enHtml = '';
+for (var j = 0; j < enFiles.length; j++) {
+  var enName = enFiles[j].replace('en_','').replace('.jpg','').replace('英','K');
+  enHtml += '<div class="product-card" onclick="openLightbox(\'images/swings/' + enFiles[j] + '\')">';
+  enHtml += '<div class="img-wrap"><img src="images/swings/' + enFiles[j] + '" alt="Swing ' + enName + '" loading="lazy"></div>';
+  enHtml += '<div class="info"><span class="model">' + enName + '</span><h3>Outdoor Swing</h3></div>';
+  enHtml += '</div>';
+}
+enGrid.innerHTML = enHtml;
+
+function openLightbox(src) {
+  document.getElementById('lightboxImg').src = src;
+  document.getElementById('lightbox').classList.add('active');
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+}
+</script>
+</body>
+</html>
