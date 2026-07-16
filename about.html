@@ -180,60 +180,24 @@
   </div>
 </footer>
 
-
-
-
-<style>
-.copy-toast {
-  position: fixed;
-  bottom: 24px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #1a3c5e;
-  color: #fff;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 15px;
-  font-weight: 600;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-  z-index: 99999;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-}
-.copy-toast.show { opacity: 1; }
-</style>
 <script>
 /* Click-to-copy for social handles */
 (function(){
-  var toast = document.createElement('div');
-  toast.className = 'copy-toast';
-  toast.textContent = 'Copied!';
-  document.body.appendChild(toast);
-
+  var t=document.createElement('div');
+  t.className='copy-toast';t.textContent='Copied!';
+  document.body.appendChild(t);
   document.querySelectorAll('.social-handle').forEach(function(el){
-    el.style.cursor = 'copy';
-    el.title = 'Click to copy';
-    el.addEventListener('click', function(e){
-      e.stopPropagation();
-      e.preventDefault();
-      var text = el.textContent.trim();
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text).then(show);
-      } else {
-        var ta = document.createElement('textarea');
-        ta.value = text;
-        ta.style.position = 'fixed'; ta.style.opacity = '0';
-        document.body.appendChild(ta);
-        ta.select();
-        document.execCommand('copy');
-        document.body.removeChild(ta);
-        show();
-      }
-      function show(){
-        toast.classList.add('show');
-        setTimeout(function(){ toast.classList.remove('show'); }, 1500);
-      }
+    el.style.cursor='copy';el.title='Click to copy';
+    el.addEventListener('click',function(e){
+      e.stopPropagation();e.preventDefault();
+      var tx=el.textContent.trim();
+      var cp=function(){navigator.clipboard.writeText(tx).then(sh)};
+      if(navigator.clipboard&&navigator.clipboard.writeText)cp();
+      else{var ta=document.createElement('textarea');ta.value=tx;
+        ta.style.position='fixed';ta.style.opacity='0';
+        document.body.appendChild(ta);ta.select();
+        document.execCommand('copy');document.body.removeChild(ta);sh();}
+      function sh(){t.classList.add('show');setTimeout(function(){t.classList.remove('show')},1200);}
     });
   });
 })();
