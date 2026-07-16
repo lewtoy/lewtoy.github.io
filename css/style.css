@@ -484,14 +484,18 @@ img { max-width: 100%; display: block; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-  padding: 20px 16px 18px;
+  justify-content: center;
+  gap: 6px;
+  padding: 18px 14px 16px;
   border-radius: 14px;
   text-decoration: none;
   color: #fff;
   transition: box-shadow 0.3s ease;
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
   cursor: pointer;
+  min-height: 0;
+  max-height: 200px;
+  overflow: hidden;
 }
 .social-card:hover {
   box-shadow: 0 12px 32px rgba(0,0,0,0.2);
@@ -523,12 +527,33 @@ img { max-width: 100%; display: block; }
 }
 .social-card .social-arrow {
   margin-top: 2px;
-  font-size: 16px;
+  font-size: 14px;
   opacity: 0.8;
   background: rgba(255,255,255,0.2);
-  padding: 6px 16px;
+  padding: 4px 12px;
   border-radius: 20px;
+  white-space: nowrap;
 }
+
+/* Copy toast */
+.copy-toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1a3c5e;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  z-index: 99999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.copy-toast.show { opacity: 1; }
 
 /* ========================================
    CONTACT PAGE FORM
