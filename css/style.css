@@ -493,13 +493,13 @@ img { max-width: 100%; display: block; }
 .social-card:hover {
   box-shadow: 0 8px 26px rgba(0,0,0,0.18);
 }
-.social-card.fb { background: linear-gradient(135deg, #1877F2, #0d5dc2); }
-.social-card.ig { background: linear-gradient(135deg, #E4405F, #c13584); }
-.social-card.li { background: linear-gradient(135deg, #0A66C2, #004182); }
-.social-card.wx { background: linear-gradient(135deg, #07C160, #05944a); }
-.social-card.whatsapp { background: linear-gradient(135deg, #25D366, #128C7E); }
-.social-card.email { background: linear-gradient(135deg, #EA4335, #c5221f); }
-.social-card.tt { background: linear-gradient(135deg, #000000, #252535); }
+.social-card.fb { background: #1877F2; }
+.social-card.ig { background: #E4405F; }
+.social-card.li { background: #0A66C2; }
+.social-card.wx { background: #07C160; }
+.social-card.whatsapp { background: #25D366; }
+.social-card.email { background: #EA4335; }
+.social-card.tt { background: #111; }
 .social-card .social-icon {
   font-size: 28px;
   line-height: 1;
