@@ -550,6 +550,77 @@ img { max-width: 100%; display: block; }
 .copy-toast.show { opacity: 1; }
 
 /* ========================================
+   DOWNLOAD SECTION
+   ======================================== */
+.download-section {
+  padding: 48px 0 40px;
+  background: var(--white);
+  border-top: 1px solid var(--border);
+}
+.download-section .section-title {
+  margin-bottom: 28px;
+}
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+.download-card {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text);
+  background: #f8fafb;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 28px 20px 24px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+.download-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+.download-card .download-icon {
+  font-size: 42px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.download-card .download-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+.download-card .download-desc {
+  font-size: 14px;
+  color: var(--text-light);
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.download-card .download-size {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 14px;
+}
+.download-card .download-btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: 8px 28px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+.download-card:hover .download-btn {
+  background: var(--accent-hover);
+}
+
+/* ========================================
    CONTACT PAGE FORM
    ======================================== */
 .contact-form-wrap {
@@ -677,6 +748,10 @@ img { max-width: 100%; display: block; }
   .social-card .social-icon { width: 50px; height: 50px; font-size: 26px; }
   .social-card .social-name { font-size: 26px; }
   .social-card .social-handle { font-size: 17px; }
+
+  .download-grid { grid-template-columns: 1fr; max-width: 400px; }
+  .download-card { padding: 24px 16px 20px; }
+  .download-card .download-name { font-size: 20px; }
 
   .product-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
   .cat-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
